@@ -3,6 +3,7 @@ import 'package:soc_med_app/models/message_post.dart';
 import 'package:soc_med_app/widgets/message_card.dart';
 import 'package:soc_med_app/widgets/message_filter.dart';
 import 'profile_screens.dart';
+import 'package:soc_med_app/screens/create_post.dart';
 
 class HomePage extends StatefulWidget {
 
@@ -112,6 +113,16 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: getMoodColor(selectedMood),
+        child: Icon(Icons.add),
+        onPressed: () {
+          Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => CreatePostScreen()),
+          );
+        },
       ),
     );
   }

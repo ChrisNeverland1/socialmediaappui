@@ -17,21 +17,21 @@ class MessagePost {
 }
 
 
-// Color getMoodColor(String mood) {
-//   switch (mood) {
-//     case "Happy":
-//       return Colors.yellow;
-//     case "Calm":
-//       return Colors.blue;
-//     case "Energetic":
-//       return Colors.orange;
-//     case "Sad":
-//       return Colors.indigo;
-//     case "Romantic":
-//       return Colors.pink;
-//     case "Angry":
-//       return Colors.red;
-//     default:
-//       return Colors.grey;
-//   }
-// }
+Color getMoodColor(String mood) {
+  switch (mood) {
+    case "Happy":
+      return Colors.yellow;
+    case "Calm":
+      return Colors.blue;
+    case "Energetic":
+      return Colors.orange;
+    case "Sad":
+      return Colors.indigo;
+    case "Romantic":
+      return Colors.pink;
+    case "Angry":
+      return Colors.red;
+    default:
+      return Colors.grey;
+  }
+}
